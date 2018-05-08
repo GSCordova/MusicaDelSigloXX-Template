@@ -1,0 +1,188 @@
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#contenido{
+  flex: 1;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-container{
+  background-color: #99c84a;
+  color: white;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+}
+
+#menu{
+  background-color: #dbe0d7;
+}
+.menu{
+  display: inline-block;
+}
+
+.menu ul{
+  padding: 0;
+}
+.menu li{
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.menu li a{
+  color: grey;
+  text-decoration: none;
+}
+
+.menu li a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+
+#imagen{
+    width: 100%;
+    height: auto;
+}
+
+.footer-contenedor{
+  text-align: center;
+}
+
+.footer-contenedor ul{
+  padding: 0;
+}
+.footer-contenedor li{
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.footer-contenedor li a{
+  color: grey;
+  text-decoration: none;
+}
+
+
+/*Video*/
+
+.contenedor-iframe{
+     position: relative;
+     padding-top: 56.25%;
+     margin-bottom: 100px;
+}
+.iframe{
+     position:absolute;
+     top:0;
+     right:0;
+     bottom:0;
+     left:0;
+     height: 100%;
+     width: 100%;
+}
+
+/*imagen*/
+
+.beatles{
+  width: 100%;
+  margin: 20px auto;
+  transition: .5s
+}
+
+.beatles:hover{
+  opacity: 0.5;
+}
+
+#clicko {
+  margin-bottom: 65px;
+}
+
+#btn {
+  margin: 20px;
+  background: #99c84a;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#btn:hover{
+  background: grey;
+}
+
+.hide {
+  display: none;
+}
+
+footer{
+  background: gainsboro;
+}
+
+@media screen and (min-width: 850px) {
+  .beatles {
+    width: 75%;
+    margin: 20px auto;
+    transition: .5s;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 60px
+  }
+  .beatles {
+    width: 50%;
+    margin: 20px auto;
+    transition: .5s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .beatles {
+    width: 110%;
+    margin: 20px auto;
+    transition: .5s;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hide {
+    display: inline-block;
+  }
+  .esconderse{
+    display: none;
+  }
+  .menu li{
+    padding: 0;
+    margin: 0 15px;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .beatles {
+    width: 100%;
+  }
+
+  ul #muere{
+    display: none;
+
+  }
+  #menu{
+    display: flex;
+    flex-direction: column;
+  }
+  #contenido {
+    width: 90%;
+  }
+
+
+}
